@@ -1,6 +1,7 @@
 // C++ program for weighted job scheduling using Naive Recursive Method
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 // A job has start time, duration and profit.
@@ -37,7 +38,7 @@ double findMaxProfit(unordered_map<int, Job> igloos, int time)
           inclProf = currActualJob.profit * exp(-0.017 * late);
         }
         igloos.erase(currJobIndex);
-        inclProf += findMaxProfitRec(igloos, time + currActualJob.duration);
+        inclProf += findMaxProfit(igloos, time + currActualJob.duration);
         igloos.insert(make_pair(currJobIndex, currActualJob));
       }
       maxProf = std::max(maxProf,inclProf);
@@ -259,6 +260,6 @@ int main()
   igloo.insert(make_pair(100, j100));
 
 
-    //cout << "The optimal profit is " << findMaxProfit(arr, n);
+    cout << "The optimal profit is " << findMaxProfit(igloo, 0);
     return 0;
 }
