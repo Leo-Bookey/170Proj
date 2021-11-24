@@ -12,7 +12,7 @@ for x in f:
     #v = v + "\nigloo.insert(make_pair(%s, j%s));" % (a[0], a[0])
     #b = str(randint(1,60))
     #c = str(randint(1, 1440))
-    v += "\n%s %s %s %s" % (a[0], 1, 1, randint(1,10000))
+    v += "\n%s %s %s %s" % (a[0], randint(1,1440), randint(1,1440), randint(1,100))
 
 
 f.write(v + "\n")
