@@ -1,8 +1,11 @@
-// #![allow(dead_code)]
+#![allow(dead_code)]
 use crate::task::{Task, MaxTask};
 use crate::soln::{compute_cost, remove_random, is_valid};
+use rayon::prelude::*;
 use rulinalg::utils::argmax;
 use std::collections::HashMap;
+use std::iter::Take;
+use std::sync::{Arc, Mutex};
 
 // Get the max(n, len(vec)) largest MaxTasks in a vector
 fn get_n_largest(vec: &mut Vec<MaxTask>, n: u16) -> Vec<MaxTask> {
@@ -18,16 +21,39 @@ pub fn greedy_rand(jobs: &Vec<Task>, num_samples: u64, top_n: u16) -> (Vec<Task>
     for i in 0..jobs.len() {
         prefixes.push(vec![jobs.get(i).unwrap().clone()]);
     }
-    let mut curr_best: f64 = 0.0;
+    // let curr_best = Arc::new(Mutex::new(0.0));
+    // let best_vec = Arc::new(Mutex::new(Vec::new()));
+    let mut curr_best = 0.0;
     let mut best_vec = Vec::new();
     let mut i = 0;
     while prefixes.len() > 0 && i < (jobs.len()-1) as u16 {
+        // let new_prefixes:Arc<Mutex<Vec<MaxTask>>> = Arc::new(Mutex::new(Vec::new()));
+        // prefixes.clone().par_iter().for_each(|prefix| {
+        //     let prefix_max_tasks = prefix_search(jobs, &mut prefix.clone(), num_samples);
+        //     let mut new_prefixes_lock = new_prefixes.lock().unwrap();
+        //     (*new_prefixes_lock).extend(prefix_max_tasks.clone());
+        //     let n_largest = get_n_largest(&mut (*new_prefixes_lock), top_n);
+        //     (*new_prefixes_lock).clear();
+        //     (*new_prefixes_lock).extend(n_largest);
+        //     for max_task in prefix_max_tasks {
+        //         let mut curr_best_lock = curr_best.lock().unwrap();
+        //         let mut best_vec_lock = best_vec.lock().unwrap();
+        //         if max_task.get_max_cost() > *curr_best_lock {
+        //             *curr_best_lock += max_task.get_max_cost() - *curr_best_lock;
+        //             (*best_vec_lock).clear();
+        //             (*best_vec_lock).extend(max_task.get_max_seq().clone());
+        //         }
+        //     }
+        // });
+        // prefixes.clear();
+        // i += 1;
+        // for max_task in new_prefixes.lock().unwrap().iter() {
+        //     prefixes.push(max_task.get_max_seq()[0..i as usize].to_vec());
+        // }
         let mut new_prefixes: Vec<MaxTask> = Vec::new();
-        let mut prefix_lengths: Vec<u16> = Vec::new();
         for prefix in prefixes.clone() {
             let prefix_max_tasks = prefix_search(jobs, &mut prefix.clone(), num_samples);
             new_prefixes.extend(prefix_max_tasks.clone());
-            prefix_lengths.push((prefix.len() + 1) as u16);
             new_prefixes = get_n_largest(&mut new_prefixes, top_n);
             for max_task in prefix_max_tasks {
                 if max_task.get_max_cost() > curr_best {
@@ -39,13 +65,53 @@ pub fn greedy_rand(jobs: &Vec<Task>, num_samples: u64, top_n: u16) -> (Vec<Task>
         }
         prefixes.clear();
         i += 1;
-        for (max_task, _) in new_prefixes.iter().zip(prefix_lengths.iter_mut()) {
+        for max_task in new_prefixes.iter() {
             prefixes.push(max_task.get_max_seq()[0..i as usize].to_vec());
         }
     }
+    // let ret_vec = best_vec.lock().unwrap().clone();
+    // let best_cost = *curr_best.lock().unwrap();
+    // (ret_vec, best_cost)
     (best_vec, curr_best)
 }
 
+pub fn greedy_rand_par(jobs: &Vec<Task>, num_samples: u64, top_n: u16) -> (Vec<Task>, f64) {
+    let mut prefixes: Vec<Vec<Task>> = Vec::new();
+    for i in 0..jobs.len() {
+        prefixes.push(vec![jobs.get(i).unwrap().clone()]);
+    }
+    let curr_best = Arc::new(Mutex::new(0.0));
+    let best_vec = Arc::new(Mutex::new(Vec::new()));
+    let mut i = 0;
+    while prefixes.len() > 0 && i < (jobs.len()-1) as u16 {
+        let new_prefixes:Arc<Mutex<Vec<MaxTask>>> = Arc::new(Mutex::new(Vec::new()));
+        prefixes.clone().par_iter().for_each(|prefix| {
+            let prefix_max_tasks = prefix_search(jobs, &mut prefix.clone(), num_samples);
+            let mut new_prefixes_lock = new_prefixes.lock().unwrap();
+            (*new_prefixes_lock).extend(prefix_max_tasks.clone());
+            let n_largest = get_n_largest(&mut (*new_prefixes_lock), top_n);
+            (*new_prefixes_lock).clear();
+            (*new_prefixes_lock).extend(n_largest);
+            for max_task in prefix_max_tasks {
+                let mut curr_best_lock = curr_best.lock().unwrap();
+                let mut best_vec_lock = best_vec.lock().unwrap();
+                if max_task.get_max_cost() > *curr_best_lock {
+                    *curr_best_lock += max_task.get_max_cost() - *curr_best_lock;
+                    (*best_vec_lock).clear();
+                    (*best_vec_lock).extend(max_task.get_max_seq().clone());
+                }
+            }
+        });
+        prefixes.clear();
+        i += 1;
+        for max_task in new_prefixes.lock().unwrap().iter() {
+            prefixes.push(max_task.get_max_seq()[0..i as usize].to_vec());
+        }
+    }
+    let ret_vec = best_vec.lock().unwrap().clone();
+    let best_cost = *curr_best.lock().unwrap();
+    (ret_vec, best_cost)
+}
 // Space complexity can be optimized further by not storing all the MaxTasks, but idt  it'll matter
 // so i'll leave it for now.
 fn prefix_search(jobs: &Vec<Task>, prefix: &mut Vec<Task>, num_samples: u64) -> Vec<MaxTask> {
@@ -110,8 +176,9 @@ fn generate_random_schedule_with_prefix(jobs: &Vec<Task>, prefix: &Vec<Task>) ->
 fn optimizaiton_function(cost: Vec<f64>) -> f64 {
     let mean = mean(&cost).unwrap();
     let sd = std_deviation(&cost).unwrap();
-    mean + 3.0*sd
-    // argmax(&cost).1
+    mean + 3.0 * sd
+    //argmax(&cost).1
+    //sd
 }
 
 fn mean(data: &Vec<f64>) -> Option<f64> {

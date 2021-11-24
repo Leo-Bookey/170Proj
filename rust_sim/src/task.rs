@@ -1,6 +1,5 @@
 use std::cmp;
 use std::f64;
-use rust_decimal::Decimal;
 
 #[derive(Debug, Clone, Copy, PartialEq, PartialOrd)]
 pub struct Task {
@@ -18,19 +17,6 @@ impl Task {
             duration,
             perfect_reward,
         }
-    }
-
-    pub fn new_null() -> Task {
-        Task {
-            id: 0,
-            deadline: 0,
-            duration: 0,
-            perfect_reward: 0.0,
-        }
-    }
-
-    pub fn is_null(&self) -> bool {
-        self.id == 0
     }
 
     pub fn get_id(&self) -> u32 {

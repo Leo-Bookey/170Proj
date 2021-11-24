@@ -1,7 +1,5 @@
 use crate::task::Task;
-use std::collections::HashSet;
 use rand::Rng;
-use std::cmp;
 use rulinalg::utils::argmax;
 
 const TIMEOUT: u64 = 1440;
@@ -35,7 +33,7 @@ fn generate_random_schedule(jobs: &Vec<Task>) -> Vec<Task> {
     let mut schedule: Vec<Task> = Vec::new();
     let mut curr_time: u64 = 0;
     let n = jobs.len() as u64;
-    for i in 0..n {
+    for _ in 0..n {
         let job: Task = remove_random(&mut jobs_copy).unwrap();
         if is_valid(curr_time, job) {
             schedule.push(job);
