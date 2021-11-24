@@ -16,11 +16,11 @@ pub fn compute_cost(used_jobs: &Vec<Task>) -> f64 {
     cost
 }
 
-fn is_valid(curr_time: u64, job: Task) -> bool {
+pub fn is_valid(curr_time: u64, job: Task) -> bool {
     curr_time + job.get_duration() <= TIMEOUT
 }
 
-fn remove_random(jobs: &mut Vec<Task>) -> Option<Task> {
+pub fn remove_random(jobs: &mut Vec<Task>) -> Option<Task> {
     let mut rng = rand::thread_rng();
     if jobs.len() == 0 {
         None
@@ -30,7 +30,7 @@ fn remove_random(jobs: &mut Vec<Task>) -> Option<Task> {
     }
 }
 
-pub fn generate_random_schedule(jobs: &Vec<Task>) -> Vec<Task> {
+fn generate_random_schedule(jobs: &Vec<Task>) -> Vec<Task> {
     let mut jobs_copy = jobs.clone();
     let mut schedule: Vec<Task> = Vec::new();
     let mut curr_time: u64 = 0;

@@ -66,10 +66,13 @@ def sample(jobs, n):
     return schedules[min_cost_idx], costs[min_cost_idx]
 
 if __name__ == '__main__':
-    n = 1000000
-    jobs = read_input_file('20.in')
-    schedule, cost = sample(jobs, n)
-    print("100", cost)
+    # n = 1000000
+    jobs = read_input_file('153.in')
+    # schedule, cost = sample(jobs, n)
+    # print("100", cost)
+    schedule = read_output_file('153.out')
+    print(compute_cost([jobs[s] for s in schedule]))
+    # print_compute_cost(schedule)
     # write_output_file('100.out', [j.get_task_id() for j in schedule])
     # # print_compute_cost(schedule)
 

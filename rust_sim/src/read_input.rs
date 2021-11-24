@@ -7,7 +7,7 @@ pub fn read_input(filename: &str) -> Result<Vec<Task>, Error> {
     let reader = BufReader::new(file);
     let mut input = Vec::new();
     let mut lines = reader.lines();
-    let n: u32 = lines.next().unwrap().unwrap().parse::<u32>().unwrap();
+    let _: u32 = lines.next().unwrap().unwrap().parse::<u32>().unwrap();
     for line in lines {
         line.map(|l| {
             let mut line = l.split_whitespace();
