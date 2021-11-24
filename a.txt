@@ -1,161 +1,484 @@
-1 1440 600 150
-2 1440 900 300
-3 1440 840 151
-4 1440 1440 1
-5 1440 1440 1
-6 1440 1440 1
-7 1440 1440 1
-8 1440 1440 1
-9 1440 1440 1
-10 1440 1440 1
-11 1440 1440 1
-12 1440 1440 1
-13 1440 1440 1
-14 1440 1440 1
-15 1440 1440 1
-16 1440 1440 1
-17 1440 1440 1
-18 1440 1440 1
-19 1440 1440 1
-20 1440 1440 1
-21 1440 1440 1
-22 1440 1440 1
-23 1440 1440 1
-24 1440 1440 1
-25 1440 1440 1
-26 1440 1440 1
-27 1440 1440 1
-28 1440 1440 1
-29 1440 1440 1
-30 1440 1440 1
-31 1440 1440 1
-32 1440 1440 1
-33 1440 1440 1
-34 1440 1440 1
-35 1440 1440 1
-36 1440 1440 1
-37 1440 1440 1
-38 1440 1440 1
-39 1440 1440 1
-40 1440 1440 1
-41 1440 1440 1
-42 1440 1440 1
-43 1440 1440 1
-44 1440 1440 1
-45 1440 1440 1
-46 1440 1440 1
-47 1440 1440 1
-48 1440 1440 1
-49 1440 1440 1
-50 1440 1440 1
-51 1440 1440 1
-52 1440 1440 1
-53 1440 1440 1
-54 1440 1440 1
-55 1440 1440 1
-56 1440 1440 1
-57 1440 1440 1
-58 1440 1440 1
-59 1440 1440 1
-60 1440 1440 1
-61 1440 1440 1
-62 1440 1440 1
-63 1440 1440 1
-64 1440 1440 1
-65 1440 1440 1
-66 1440 1440 1
-67 1440 1440 1
-68 1440 1440 1
-69 1440 1440 1
-70 1440 1440 1
-71 1440 1440 1
-72 1440 1440 1
-73 1440 1440 1
-74 1440 1440 1
-75 1440 1440 1
-76 1440 1440 1
-77 1440 1440 1
-78 1440 1440 1
-79 1440 1440 1
-80 1440 1440 1
-81 1440 1440 1
-82 1440 1440 1
-83 1440 1440 1
-84 1440 1440 1
-85 1440 1440 1
-86 1440 1440 1
-87 1440 1440 1
-88 1440 1440 1
-89 1440 1440 1
-90 1440 1440 1
-91 1440 1440 1
-92 1440 1440 1
-93 1440 1440 1
-94 1440 1440 1
-95 1440 1440 1
-96 1440 1440 1
-97 1440 1440 1
-98 1440 1440 1
-99 1440 1440 1
-100 1440 1440 1
-101 1440 1440 1
-102 1440 1440 1
-103 1440 1440 1
-104 1440 1440 1
-105 1440 1440 1
-106 1440 1440 1
-107 1440 1440 1
-108 1440 1440 1
-109 1440 1440 1
-110 1440 1440 1
-111 1440 1440 1
-112 1440 1440 1
-113 1440 1440 1
-114 1440 1440 1
-115 1440 1440 1
-116 1440 1440 1
-117 1440 1440 1
-118 1440 1440 1
-119 1440 1440 1
-120 1440 1440 1
-121 1440 1440 1
-122 1440 1440 1
-123 1440 1440 1
-124 1440 1440 1
-125 1440 1440 1
-126 1440 1440 1
-127 1440 1440 1
-128 1440 1440 1
-129 1440 1440 1
-130 1440 1440 1
-131 1440 1440 1
-132 1440 1440 1
-133 1440 1440 1
-134 1440 1440 1
-135 1440 1440 1
-136 1440 1440 1
-137 1440 1440 1
-138 1440 1440 1
-139 1440 1440 1
-140 1440 1440 1
-141 1440 1440 1
-142 1440 1440 1
-143 1440 1440 1
-144 1440 1440 1
-145 1440 1440 1
-146 1440 1440 1
-147 1440 1440 1
-148 1440 1440 1
-149 1440 1440 1
-150 1440 1440 1
-151 1440 1440 1
-152 1440 1440 1
-153 1440 1440 1
-154 1440 1440 1
-155 1440 1440 1
-156 1440 1440 1
-157 1440 1440 1
-158 1440 1440 1
-159 1440 1440 1
-160 1440 1440 1
-161 1440 1440 1
+1 1 1 138
+2 1 1 583
+3 1 1 868
+4 1 1 822
+5 1 1 783
+6 1 1 65
+7 1 1 262
+8 1 1 121
+9 1 1 508
+10 1 1 780
+11 1 1 461
+12 1 1 484
+13 1 1 668
+14 1 1 389
+15 1 1 808
+16 1 1 215
+17 1 1 97
+18 1 1 500
+19 1 1 30
+20 1 1 915
+21 1 1 856
+22 1 1 400
+23 1 1 444
+24 1 1 623
+25 1 1 781
+26 1 1 786
+27 1 1 3
+28 1 1 713
+29 1 1 457
+30 1 1 273
+31 1 1 739
+32 1 1 822
+33 1 1 235
+34 1 1 606
+35 1 1 968
+36 1 1 105
+37 1 1 924
+38 1 1 326
+39 1 1 32
+40 1 1 23
+41 1 1 27
+42 1 1 666
+43 1 1 555
+44 1 1 10
+45 1 1 962
+46 1 1 903
+47 1 1 391
+48 1 1 703
+49 1 1 222
+50 1 1 993
+51 1 1 433
+52 1 1 744
+53 1 1 30
+54 1 1 541
+55 1 1 228
+56 1 1 783
+57 1 1 449
+58 1 1 962
+59 1 1 508
+60 1 1 567
+61 1 1 239
+62 1 1 354
+63 1 1 237
+64 1 1 694
+65 1 1 225
+66 1 1 780
+67 1 1 471
+68 1 1 976
+69 1 1 297
+70 1 1 949
+71 1 1 23
+72 1 1 427
+73 1 1 858
+74 1 1 939
+75 1 1 570
+76 1 1 945
+77 1 1 658
+78 1 1 103
+79 1 1 191
+80 1 1 645
+81 1 1 742
+82 1 1 881
+83 1 1 304
+84 1 1 124
+85 1 1 761
+86 1 1 341
+87 1 1 918
+88 1 1 739
+89 1 1 997
+90 1 1 729
+91 1 1 513
+92 1 1 959
+93 1 1 991
+94 1 1 433
+95 1 1 520
+96 1 1 850
+97 1 1 933
+98 1 1 687
+99 1 1 195
+100 1 1 311
+101 1 1 291
+102 1 1 602
+103 1 1 997
+104 1 1 904
+105 1 1 512
+106 1 1 867
+107 1 1 964
+108 1 1 518
+109 1 1 403
+110 1 1 604
+111 1 1 874
+112 1 1 36
+113 1 1 492
+114 1 1 249
+115 1 1 762
+116 1 1 817
+117 1 1 414
+118 1 1 425
+119 1 1 681
+120 1 1 178
+121 1 1 376
+122 1 1 562
+123 1 1 904
+124 1 1 720
+125 1 1 795
+126 1 1 691
+127 1 1 756
+128 1 1 384
+129 1 1 89
+130 1 1 450
+131 1 1 680
+132 1 1 521
+133 1 1 111
+134 1 1 798
+135 1 1 168
+136 1 1 534
+137 1 1 861
+138 1 1 403
+139 1 1 380
+140 1 1 502
+141 1 1 751
+142 1 1 31
+143 1 1 481
+144 1 1 45
+145 1 1 316
+146 1 1 721
+147 1 1 869
+148 1 1 630
+149 1 1 608
+150 1 1 593
+151 1 1 404
+152 1 1 663
+153 1 1 175
+154 1 1 173
+155 1 1 515
+156 1 1 233
+157 1 1 13
+158 1 1 790
+159 1 1 205
+160 1 1 553
+161 1 1 943
+
+Job j1 = {1, 1, 1, 138};
+igloo.insert(make_pair(1, j1));
+Job j2 = {2, 1, 1, 583};
+igloo.insert(make_pair(2, j2));
+Job j3 = {3, 1, 1, 868};
+igloo.insert(make_pair(3, j3));
+Job j4 = {4, 1, 1, 822};
+igloo.insert(make_pair(4, j4));
+Job j5 = {5, 1, 1, 783};
+igloo.insert(make_pair(5, j5));
+Job j6 = {6, 1, 1, 65};
+igloo.insert(make_pair(6, j6));
+Job j7 = {7, 1, 1, 262};
+igloo.insert(make_pair(7, j7));
+Job j8 = {8, 1, 1, 121};
+igloo.insert(make_pair(8, j8));
+Job j9 = {9, 1, 1, 508};
+igloo.insert(make_pair(9, j9));
+Job j10 = {10, 1, 1, 780};
+igloo.insert(make_pair(10, j10));
+Job j11 = {11, 1, 1, 461};
+igloo.insert(make_pair(11, j11));
+Job j12 = {12, 1, 1, 484};
+igloo.insert(make_pair(12, j12));
+Job j13 = {13, 1, 1, 668};
+igloo.insert(make_pair(13, j13));
+Job j14 = {14, 1, 1, 389};
+igloo.insert(make_pair(14, j14));
+Job j15 = {15, 1, 1, 808};
+igloo.insert(make_pair(15, j15));
+Job j16 = {16, 1, 1, 215};
+igloo.insert(make_pair(16, j16));
+Job j17 = {17, 1, 1, 97};
+igloo.insert(make_pair(17, j17));
+Job j18 = {18, 1, 1, 500};
+igloo.insert(make_pair(18, j18));
+Job j19 = {19, 1, 1, 30};
+igloo.insert(make_pair(19, j19));
+Job j20 = {20, 1, 1, 915};
+igloo.insert(make_pair(20, j20));
+Job j21 = {21, 1, 1, 856};
+igloo.insert(make_pair(21, j21));
+Job j22 = {22, 1, 1, 400};
+igloo.insert(make_pair(22, j22));
+Job j23 = {23, 1, 1, 444};
+igloo.insert(make_pair(23, j23));
+Job j24 = {24, 1, 1, 623};
+igloo.insert(make_pair(24, j24));
+Job j25 = {25, 1, 1, 781};
+igloo.insert(make_pair(25, j25));
+Job j26 = {26, 1, 1, 786};
+igloo.insert(make_pair(26, j26));
+Job j27 = {27, 1, 1, 3};
+igloo.insert(make_pair(27, j27));
+Job j28 = {28, 1, 1, 713};
+igloo.insert(make_pair(28, j28));
+Job j29 = {29, 1, 1, 457};
+igloo.insert(make_pair(29, j29));
+Job j30 = {30, 1, 1, 273};
+igloo.insert(make_pair(30, j30));
+Job j31 = {31, 1, 1, 739};
+igloo.insert(make_pair(31, j31));
+Job j32 = {32, 1, 1, 822};
+igloo.insert(make_pair(32, j32));
+Job j33 = {33, 1, 1, 235};
+igloo.insert(make_pair(33, j33));
+Job j34 = {34, 1, 1, 606};
+igloo.insert(make_pair(34, j34));
+Job j35 = {35, 1, 1, 968};
+igloo.insert(make_pair(35, j35));
+Job j36 = {36, 1, 1, 105};
+igloo.insert(make_pair(36, j36));
+Job j37 = {37, 1, 1, 924};
+igloo.insert(make_pair(37, j37));
+Job j38 = {38, 1, 1, 326};
+igloo.insert(make_pair(38, j38));
+Job j39 = {39, 1, 1, 32};
+igloo.insert(make_pair(39, j39));
+Job j40 = {40, 1, 1, 23};
+igloo.insert(make_pair(40, j40));
+Job j41 = {41, 1, 1, 27};
+igloo.insert(make_pair(41, j41));
+Job j42 = {42, 1, 1, 666};
+igloo.insert(make_pair(42, j42));
+Job j43 = {43, 1, 1, 555};
+igloo.insert(make_pair(43, j43));
+Job j44 = {44, 1, 1, 10};
+igloo.insert(make_pair(44, j44));
+Job j45 = {45, 1, 1, 962};
+igloo.insert(make_pair(45, j45));
+Job j46 = {46, 1, 1, 903};
+igloo.insert(make_pair(46, j46));
+Job j47 = {47, 1, 1, 391};
+igloo.insert(make_pair(47, j47));
+Job j48 = {48, 1, 1, 703};
+igloo.insert(make_pair(48, j48));
+Job j49 = {49, 1, 1, 222};
+igloo.insert(make_pair(49, j49));
+Job j50 = {50, 1, 1, 993};
+igloo.insert(make_pair(50, j50));
+Job j51 = {51, 1, 1, 433};
+igloo.insert(make_pair(51, j51));
+Job j52 = {52, 1, 1, 744};
+igloo.insert(make_pair(52, j52));
+Job j53 = {53, 1, 1, 30};
+igloo.insert(make_pair(53, j53));
+Job j54 = {54, 1, 1, 541};
+igloo.insert(make_pair(54, j54));
+Job j55 = {55, 1, 1, 228};
+igloo.insert(make_pair(55, j55));
+Job j56 = {56, 1, 1, 783};
+igloo.insert(make_pair(56, j56));
+Job j57 = {57, 1, 1, 449};
+igloo.insert(make_pair(57, j57));
+Job j58 = {58, 1, 1, 962};
+igloo.insert(make_pair(58, j58));
+Job j59 = {59, 1, 1, 508};
+igloo.insert(make_pair(59, j59));
+Job j60 = {60, 1, 1, 567};
+igloo.insert(make_pair(60, j60));
+Job j61 = {61, 1, 1, 239};
+igloo.insert(make_pair(61, j61));
+Job j62 = {62, 1, 1, 354};
+igloo.insert(make_pair(62, j62));
+Job j63 = {63, 1, 1, 237};
+igloo.insert(make_pair(63, j63));
+Job j64 = {64, 1, 1, 694};
+igloo.insert(make_pair(64, j64));
+Job j65 = {65, 1, 1, 225};
+igloo.insert(make_pair(65, j65));
+Job j66 = {66, 1, 1, 780};
+igloo.insert(make_pair(66, j66));
+Job j67 = {67, 1, 1, 471};
+igloo.insert(make_pair(67, j67));
+Job j68 = {68, 1, 1, 976};
+igloo.insert(make_pair(68, j68));
+Job j69 = {69, 1, 1, 297};
+igloo.insert(make_pair(69, j69));
+Job j70 = {70, 1, 1, 949};
+igloo.insert(make_pair(70, j70));
+Job j71 = {71, 1, 1, 23};
+igloo.insert(make_pair(71, j71));
+Job j72 = {72, 1, 1, 427};
+igloo.insert(make_pair(72, j72));
+Job j73 = {73, 1, 1, 858};
+igloo.insert(make_pair(73, j73));
+Job j74 = {74, 1, 1, 939};
+igloo.insert(make_pair(74, j74));
+Job j75 = {75, 1, 1, 570};
+igloo.insert(make_pair(75, j75));
+Job j76 = {76, 1, 1, 945};
+igloo.insert(make_pair(76, j76));
+Job j77 = {77, 1, 1, 658};
+igloo.insert(make_pair(77, j77));
+Job j78 = {78, 1, 1, 103};
+igloo.insert(make_pair(78, j78));
+Job j79 = {79, 1, 1, 191};
+igloo.insert(make_pair(79, j79));
+Job j80 = {80, 1, 1, 645};
+igloo.insert(make_pair(80, j80));
+Job j81 = {81, 1, 1, 742};
+igloo.insert(make_pair(81, j81));
+Job j82 = {82, 1, 1, 881};
+igloo.insert(make_pair(82, j82));
+Job j83 = {83, 1, 1, 304};
+igloo.insert(make_pair(83, j83));
+Job j84 = {84, 1, 1, 124};
+igloo.insert(make_pair(84, j84));
+Job j85 = {85, 1, 1, 761};
+igloo.insert(make_pair(85, j85));
+Job j86 = {86, 1, 1, 341};
+igloo.insert(make_pair(86, j86));
+Job j87 = {87, 1, 1, 918};
+igloo.insert(make_pair(87, j87));
+Job j88 = {88, 1, 1, 739};
+igloo.insert(make_pair(88, j88));
+Job j89 = {89, 1, 1, 997};
+igloo.insert(make_pair(89, j89));
+Job j90 = {90, 1, 1, 729};
+igloo.insert(make_pair(90, j90));
+Job j91 = {91, 1, 1, 513};
+igloo.insert(make_pair(91, j91));
+Job j92 = {92, 1, 1, 959};
+igloo.insert(make_pair(92, j92));
+Job j93 = {93, 1, 1, 991};
+igloo.insert(make_pair(93, j93));
+Job j94 = {94, 1, 1, 433};
+igloo.insert(make_pair(94, j94));
+Job j95 = {95, 1, 1, 520};
+igloo.insert(make_pair(95, j95));
+Job j96 = {96, 1, 1, 850};
+igloo.insert(make_pair(96, j96));
+Job j97 = {97, 1, 1, 933};
+igloo.insert(make_pair(97, j97));
+Job j98 = {98, 1, 1, 687};
+igloo.insert(make_pair(98, j98));
+Job j99 = {99, 1, 1, 195};
+igloo.insert(make_pair(99, j99));
+Job j100 = {100, 1, 1, 311};
+igloo.insert(make_pair(100, j100));
+Job j101 = {101, 1, 1, 291};
+igloo.insert(make_pair(101, j101));
+Job j102 = {102, 1, 1, 602};
+igloo.insert(make_pair(102, j102));
+Job j103 = {103, 1, 1, 997};
+igloo.insert(make_pair(103, j103));
+Job j104 = {104, 1, 1, 904};
+igloo.insert(make_pair(104, j104));
+Job j105 = {105, 1, 1, 512};
+igloo.insert(make_pair(105, j105));
+Job j106 = {106, 1, 1, 867};
+igloo.insert(make_pair(106, j106));
+Job j107 = {107, 1, 1, 964};
+igloo.insert(make_pair(107, j107));
+Job j108 = {108, 1, 1, 518};
+igloo.insert(make_pair(108, j108));
+Job j109 = {109, 1, 1, 403};
+igloo.insert(make_pair(109, j109));
+Job j110 = {110, 1, 1, 604};
+igloo.insert(make_pair(110, j110));
+Job j111 = {111, 1, 1, 874};
+igloo.insert(make_pair(111, j111));
+Job j112 = {112, 1, 1, 36};
+igloo.insert(make_pair(112, j112));
+Job j113 = {113, 1, 1, 492};
+igloo.insert(make_pair(113, j113));
+Job j114 = {114, 1, 1, 249};
+igloo.insert(make_pair(114, j114));
+Job j115 = {115, 1, 1, 762};
+igloo.insert(make_pair(115, j115));
+Job j116 = {116, 1, 1, 817};
+igloo.insert(make_pair(116, j116));
+Job j117 = {117, 1, 1, 414};
+igloo.insert(make_pair(117, j117));
+Job j118 = {118, 1, 1, 425};
+igloo.insert(make_pair(118, j118));
+Job j119 = {119, 1, 1, 681};
+igloo.insert(make_pair(119, j119));
+Job j120 = {120, 1, 1, 178};
+igloo.insert(make_pair(120, j120));
+Job j121 = {121, 1, 1, 376};
+igloo.insert(make_pair(121, j121));
+Job j122 = {122, 1, 1, 562};
+igloo.insert(make_pair(122, j122));
+Job j123 = {123, 1, 1, 904};
+igloo.insert(make_pair(123, j123));
+Job j124 = {124, 1, 1, 720};
+igloo.insert(make_pair(124, j124));
+Job j125 = {125, 1, 1, 795};
+igloo.insert(make_pair(125, j125));
+Job j126 = {126, 1, 1, 691};
+igloo.insert(make_pair(126, j126));
+Job j127 = {127, 1, 1, 756};
+igloo.insert(make_pair(127, j127));
+Job j128 = {128, 1, 1, 384};
+igloo.insert(make_pair(128, j128));
+Job j129 = {129, 1, 1, 89};
+igloo.insert(make_pair(129, j129));
+Job j130 = {130, 1, 1, 450};
+igloo.insert(make_pair(130, j130));
+Job j131 = {131, 1, 1, 680};
+igloo.insert(make_pair(131, j131));
+Job j132 = {132, 1, 1, 521};
+igloo.insert(make_pair(132, j132));
+Job j133 = {133, 1, 1, 111};
+igloo.insert(make_pair(133, j133));
+Job j134 = {134, 1, 1, 798};
+igloo.insert(make_pair(134, j134));
+Job j135 = {135, 1, 1, 168};
+igloo.insert(make_pair(135, j135));
+Job j136 = {136, 1, 1, 534};
+igloo.insert(make_pair(136, j136));
+Job j137 = {137, 1, 1, 861};
+igloo.insert(make_pair(137, j137));
+Job j138 = {138, 1, 1, 403};
+igloo.insert(make_pair(138, j138));
+Job j139 = {139, 1, 1, 380};
+igloo.insert(make_pair(139, j139));
+Job j140 = {140, 1, 1, 502};
+igloo.insert(make_pair(140, j140));
+Job j141 = {141, 1, 1, 751};
+igloo.insert(make_pair(141, j141));
+Job j142 = {142, 1, 1, 31};
+igloo.insert(make_pair(142, j142));
+Job j143 = {143, 1, 1, 481};
+igloo.insert(make_pair(143, j143));
+Job j144 = {144, 1, 1, 45};
+igloo.insert(make_pair(144, j144));
+Job j145 = {145, 1, 1, 316};
+igloo.insert(make_pair(145, j145));
+Job j146 = {146, 1, 1, 721};
+igloo.insert(make_pair(146, j146));
+Job j147 = {147, 1, 1, 869};
+igloo.insert(make_pair(147, j147));
+Job j148 = {148, 1, 1, 630};
+igloo.insert(make_pair(148, j148));
+Job j149 = {149, 1, 1, 608};
+igloo.insert(make_pair(149, j149));
+Job j150 = {150, 1, 1, 593};
+igloo.insert(make_pair(150, j150));
+Job j151 = {151, 1, 1, 404};
+igloo.insert(make_pair(151, j151));
+Job j152 = {152, 1, 1, 663};
+igloo.insert(make_pair(152, j152));
+Job j153 = {153, 1, 1, 175};
+igloo.insert(make_pair(153, j153));
+Job j154 = {154, 1, 1, 173};
+igloo.insert(make_pair(154, j154));
+Job j155 = {155, 1, 1, 515};
+igloo.insert(make_pair(155, j155));
+Job j156 = {156, 1, 1, 233};
+igloo.insert(make_pair(156, j156));
+Job j157 = {157, 1, 1, 13};
+igloo.insert(make_pair(157, j157));
+Job j158 = {158, 1, 1, 790};
+igloo.insert(make_pair(158, j158));
+Job j159 = {159, 1, 1, 205};
+igloo.insert(make_pair(159, j159));
+Job j160 = {160, 1, 1, 553};
+igloo.insert(make_pair(160, j160));
+Job j161 = {161, 1, 1, 943};
+igloo.insert(make_pair(161, j161));
