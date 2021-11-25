@@ -1,6 +1,6 @@
 from math import *
 unordered_map = {}
-
+currIter = 0;
 # def find_max(igloos,time):
 #     if (time >= 1440 or 0 >= len(igloos)):
 #         return 0
@@ -30,6 +30,9 @@ def find_max_1(igloos,time):
     inclProf = 0
     for _,v in igloos.items():
         currActualJob = v
+        global currIter
+        print(currIter)
+        currIter += 1
         if currActualJob[3] >= 0:
             _ = currActualJob[0]
             if currActualJob[2] + time <= currActualJob[1]:
@@ -53,28 +56,18 @@ s = """
 """
 
 
-s1 = """1 1 1 138
-2 1 1 583
-3 1 1 868
-4 1 1 822
-5 1 1 783
-6 1 1 65
-7 1 1 262
-8 1 1 121
-9 1 1 508
-10 1 1 780
-11 1 1 461
-12 1 1 484
-13 1 1 668
-14 1 1 389
-15 1 1 808
-16 1 1 215
-17 1 1 97
-18 1 1 500
-19 1 1 30
-20 1 1 915
+s1 = """1 368 50 45
+2 939 79 10
+3 41 84 44
+4 1098 1 45
+5 1040 23 95
+6 1299 4 3
+7 780 94 39
+8 312 43 3
+9 320 44 50
+10 336 24 22
 """
-vals = s.split("\n")
+vals = s1.split("\n")
 for i in range(len(vals)):
     row = vals[i].split()
     for j in range(len(row)):
