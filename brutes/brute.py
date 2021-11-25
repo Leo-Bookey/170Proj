@@ -74,14 +74,14 @@ s1 = """1 1 1 138
 19 1 1 30
 20 1 1 915
 """
-vals = s1.split("\n")
+vals = s.split("\n")
 for i in range(len(vals)):
     row = vals[i].split()
     for j in range(len(row)):
         row[j] = float(row[j])
     #print(row)
     if (row != []):
-        unordered_map[i + 1] = row
+        unordered_map[i] = row
 
 #print(unordered_map)
 
