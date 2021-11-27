@@ -4,6 +4,8 @@
 #include <unordered_map>
 #include <list>
 #include <map>
+#include <ctime>
+#include <cstdio>
 using namespace std;
 
 // A job has start time, duration and profit.
@@ -67,7 +69,9 @@ int main()
   igloo.insert(make_pair(4, j4));
   Job j5 = {5, 1, 1, 783};
   igloo.insert(make_pair(5, j5));
-  Job j6 = {6, 1, 1, 65};
+  
+/*
+Job j6 = {6, 1, 1, 65};
   igloo.insert(make_pair(6, j6));
   Job j7 = {7, 1, 1, 262};
   igloo.insert(make_pair(7, j7));
@@ -77,7 +81,9 @@ int main()
   igloo.insert(make_pair(9, j9));
   Job j10 = {10, 1, 1, 780};
   igloo.insert(make_pair(10, j10));
-  Job j11 = {11, 1, 1, 461};
+
+
+   Job j11 = {11, 1, 1, 461};
   igloo.insert(make_pair(11, j11));
   Job j12 = {12, 1, 1, 484};
   igloo.insert(make_pair(12, j12));
@@ -98,9 +104,14 @@ int main()
   Job j20 = {20, 1, 1, 915};
   igloo.insert(make_pair(20, j20));
 
+*/
 
-
+    clock_t start, end;
+    start = clock();
 
     cout << "The optimal profit is " << findMaxProfit(igloo, 0);
+    end = clock();
+    double timeTaken = double(end - start) / double(CLOCKS_PER_SEC);
+    cout << " Time taken is: " << fixed << timeTaken;
     return 0;
 }

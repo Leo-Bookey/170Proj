@@ -33,7 +33,7 @@ def find_max_1(igloos,time):
         global currIter
         print(currIter)
         currIter += 1
-        if currActualJob[3] >= 0:
+        if currActualJob[3] >= 0 and currActualJob[2] + time <= 1440:
             _ = currActualJob[0]
             if currActualJob[2] + time <= currActualJob[1]:
                 inclProf = currActualJob[3]
